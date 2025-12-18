@@ -1,0 +1,40 @@
+{
+    "xsappname": "example",
+    "tenant-mode": "dedicated",
+    "scopes": [
+        {
+            "name": "$XSAPPNAME.AdminRole",
+            "description": "Admin role - Maintains master data, configurations, and lookups"
+        },
+        {
+            "name": "$XSAPPNAME.ApproverRole",
+            "description": "ApproverRole - Approves high-value POs and invoices."
+        }
+    ],
+    "role-templates": [
+        {
+            "name": "AdminRole",
+            "description": "Admin role with full permissions",
+            "scope-references": [
+                "$XSAPPNAME.AdminRole"          ]
+        },
+          {
+            "name": "ApproverRole",
+            "description": "Admin role with full permissions",
+            "scope-references": [
+                "$XSAPPNAME.ApproverRole"           ]
+        }
+    ],
+    "authorities": [
+        "$ACCEPT_GRANTED_AUTHORITIES"
+    ],
+    "oauth2-configuration": {
+        "token-validity": 900,
+        "refresh-token-validity": 1800,
+        "redirect-uris": [
+            "https://*.cfapps.us10-001.hana.ondemand.com/login/callback"
+        ],
+        "autoapprove": "false"
+    },
+    "xsenableasyncservice": true
+}

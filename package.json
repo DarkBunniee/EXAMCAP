@@ -1,0 +1,58 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "dependencies": {
+    "@cap-js/hana": "^2.5.0",
+    "@sap/approuter": "^20.8.6",
+    "@sap/cds": "^9",
+    "@sap/xssec": "^4.12.1",
+    "express": "^4"
+  },
+  "devDependencies": {
+    "@cap-js/sqlite": "^2",
+    "@sap/cds-dk": "^9",
+    "cds-plugin-ui5": "^0.13.0"
+  },
+  "scripts": {
+    "start": "cds-serve",
+    "watch-fiori": "cds watch --open fiori/index.html?sap-ui-xx-viewCache=false --livereload false"
+  },
+  "private": true,
+  "workspaces": [
+    "app/*"
+  ],
+  "sapux": [
+    "app/fiori"
+  ],
+  "cds": {
+    "requires": {
+      "db": "hana",
+      "uaa": {
+        "kind": "xsuaa"
+      },
+      "auth": {
+        "[development]": {
+          "strategy": "mock",
+          "users": {
+            "Himanshu": {
+              "password": "himanshu",
+              "roles": [
+                "AdminRole"
+              ]
+            },
+            "Aditya": {
+              "password": "himanshu",
+              "roles": [
+                "ApproverRole"
+              ]
+            }
+          }
+        },
+        "[production]": {
+          "strategy": "JWT"
+        }
+      }
+    }
+  }
+}

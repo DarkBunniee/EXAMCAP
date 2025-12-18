@@ -1,0 +1,10 @@
+ID;poHeader_ID;itemNo;material;quantity;price;createdAt;createdBy;modifiedAt;modifiedBy
+100;10;10;Laptop Dell Latitude 5440;5;2800.00;2024-01-10T09:20:00Z;admin;2024-01-12T14:30:00Z;admin
+110;10;20;USB-C Docking Station;10;140.00;2024-01-10T09:22:00Z;admin;2024-01-12T14:30:00Z;admin
+120;10;30;Wireless Mouse;20;35.00;2024-01-10T09:25:00Z;admin;2024-01-12T14:30:00Z;admin
+
+200;20;10;Office Chair Ergonomic;8;420.00;2024-02-05T10:05:00Z;buyer1;2024-02-06T16:45:00Z;buyer1
+210;20;20;Standing Desk;4;980.00;2024-02-05T10:10:00Z;buyer1;2024-02-06T16:45:00Z;buyer1
+
+300;30;10;Application Server;2;4500.00;2024-03-01T08:45:00Z;buyer2;2024-03-02T11:20:00Z;buyer2
+310;30;20;Enterprise SSD 2TB;5;230.00;2024-03-01T08:50:00Z;buyer2;2024-03-02T11:20:00Z;buyer2
