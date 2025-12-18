@@ -5,27 +5,27 @@ annotate service.POHeaders with @(
         Data : [
             {
                 $Type : 'UI.DataField',
-                Label : 'ID',
+                Label : 'Purchase Order ID',
                 Value : ID,
             },
             {
                 $Type : 'UI.DataField',
-                Label : 'poNumber',
+                Label : 'Purchase Order Number',
                 Value : poNumber,
             },
             {
                 $Type : 'UI.DataField',
-                Label : 'supplier',
+                Label : 'PO Supplier',
                 Value : supplier,
             },
             {
                 $Type : 'UI.DataField',
-                Label : 'currency',
+                Label : 'Currency Code',
                 Value : currency,
             },
             {
                 $Type : 'UI.DataField',
-                Label : 'totalAmount',
+                Label : 'Total Amount',
                 Value : totalAmount,
             },
         ],
@@ -34,34 +34,34 @@ annotate service.POHeaders with @(
         {
             $Type : 'UI.ReferenceFacet',
             ID : 'GeneratedFacet1',
-            Label : 'General Information',
+            Label : 'Purchase Order Details',
             Target : '@UI.FieldGroup#GeneratedGroup',
         },
     ],
     UI.LineItem : [
         {
             $Type : 'UI.DataField',
-            Label : 'ID',
+            Label : 'Purchase Order ID',
             Value : ID,
         },
         {
             $Type : 'UI.DataField',
-            Label : 'poNumber',
+            Label : 'Purchase Order Number',
             Value : poNumber,
         },
         {
             $Type : 'UI.DataField',
-            Label : 'supplier',
+            Label : 'PO Supplier',
             Value : supplier,
         },
         {
             $Type : 'UI.DataField',
-            Label : 'currency',
+            Label : 'Currency Code',
             Value : currency,
         },
         {
             $Type : 'UI.DataField',
-            Label : 'totalAmount',
+            Label : 'Total Amount',
             Value : totalAmount,
         },
     ],
